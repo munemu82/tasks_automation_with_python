@@ -1,1 +1,2 @@
-# tasks_automation_with_python
+# 1. Automating Text Extraction and key figures summarization from PDF files
+One of my friends is a driver for uber and DIDI, one day asked me if I could write a script for him to extract Sub-total income, income and deducations from the DIDI monthly Tax summary PDF. This was for his Tax return logdment since DIDI at the time I am writing this did not provide annual Tax summary for driver's income. So I spent few hours reading through the PDF files and figuring out the variable and constant text and came up with a script (see file processPdfFiles.py)

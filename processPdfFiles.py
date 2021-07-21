@@ -2,7 +2,7 @@ import PyPDF2
 import re
 import os
 
-path = 'C:/Users/pc/Documents/For Tax Return/2020-2021/DIDI/2020_2021 Tax Summary/files'
+path = 'testfiles'
 incomeTextList = [] 
 totalIncomeTextList = []
 totalDeducations = 0
@@ -83,4 +83,4 @@ for filename in os.listdir(path):
     print("Sub-total Income: "+extractSubTotalText(text) +" Deductions: "+str(potentialDeducations) +" Income: "+extractIncomeText(text)+" for "+filename)
     
 print("--------------------------------FINAL RESULT-------------------------------------------------------")        
-print("Grand Total: " + str(computeTotal(totalIncomeTextList))+"Total Deducations: "+str(totalDeducations)+" Total Income: "+str(computeTotal(incomeTextList)))
+print("Grand Total: " + str(computeTotal(totalIncomeTextList))+" Total Deducations: "+str(totalDeducations)+" Total Income: "+str(computeTotal(incomeTextList)))
